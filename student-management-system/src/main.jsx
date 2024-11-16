@@ -17,6 +17,7 @@ import {
   Events,
   Contact,
   Enrollment,
+  Login
 } from "./pages";
 
 const router = createBrowserRouter(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="/events" element={<Events />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/students" element={<Students />} />
+      <Route path="/login" element={<Login />} />
     </Route>
   )
 );

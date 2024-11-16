@@ -1,0 +1,39 @@
+[
+  {
+    "title": "English",
+    "description": "Enhance your reading, writing, and communication skills. Build a strong foundation in language and literature.",
+    "image": "../../src/assets/coursesImages/english.jpg",
+    "rating": 4.8
+  },
+  {
+    "title": "Urdu",
+    "description": "Explore the richness of Urdu literature and improve your proficiency in reading and writing. Learn the cultural significance of the language.",
+    "image": "../../src/assets/coursesImages/urdu.jpg",
+    "rating": 4.6
+  },
+  {
+    "title": "Mathematics",
+    "description": "Develop logical reasoning and problem-solving skills. Master concepts from basic arithmetic to advanced algebra and geometry.",
+    "image": "../../src/assets/coursesImages/math.jpg",
+    "rating": 4.9
+  },
+  {
+    "title": "Information Technology",
+    "description": "Learn about the latest technology trends and coding practices. Gain practical skills in software and hardware applications.",
+    "image": "../../src/assets/coursesImages/it.jpg",
+    "rating": 4.8
+  },
+  {
+    "title": "Arts",
+    "description": "Unleash your creativity through painting, sculpture, and digital art. Explore various mediums to express your artistic vision.",
+    "image": "../../src/assets/coursesImages/arts.jpg",
+    "rating": 4.5
+  },
+  {
+    "title": "Sports",
+    "description": "Improve physical fitness, teamwork, and sportsmanship. Participate in activities ranging from soccer to gymnastics.",
+    "image": "../../src/assets/coursesImages/sports.jpg",
+    "rating": 4.7
+  }
+ 
+]

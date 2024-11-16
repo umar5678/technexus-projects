@@ -6,6 +6,7 @@ import {
   HeroSection,
   MissionSection,
   Newsletter,
+  TopStudents
 } from "../components/forHomepage";
 
 const Homepage = () => {
@@ -15,6 +16,7 @@ const Homepage = () => {
       <HeroSection />
       <MissionSection />
       <FeaturedCourses />
+      <TopStudents/>
       <VisitUs />
       <Newsletter />
     </Container>

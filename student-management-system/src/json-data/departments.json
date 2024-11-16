@@ -1,0 +1,108 @@
+[
+  {
+    "title": "Computer Science",
+    "description": "The Computer Science department offers courses in programming, algorithms, and systems development. Our facilities are equipped with modern computers and software tools to help students thrive in the tech industry.",
+    "image": "https://via.placeholder.com/150?text=CS+Department",
+    "teachers": [
+      {
+        "name": "John Doe",
+        "image": "https://randomuser.me/api/portraits/men/42.jpg",
+        "yearsOfExperience": 10
+      },
+      {
+        "name": "Jane Smith",
+        "image": "https://randomuser.me/api/portraits/men/20.jpg",
+        "yearsOfExperience": 5
+      }
+    ]
+  },
+  {
+    "title": "Mathematics",
+    "description": "Our Mathematics department provides a comprehensive curriculum in pure and applied mathematics. Students are trained in problem-solving and analytical skills, preparing them for careers in research, finance, and education.",
+    "image": "https://via.placeholder.com/150?text=Math+Department",
+    "teachers": [
+      {
+        "name": "Dr. Alice Johnson",
+        "image": "https://randomuser.me/api/portraits/men/22.jpg",
+        "yearsOfExperience": 12
+      },
+      {
+        "name": "Prof. Mark Lee",
+        "image": "https://randomuser.me/api/portraits/women/23.jpg",
+        "yearsOfExperience": 8
+      }
+    ]
+  },
+  {
+    "title": "Science",
+    "description": "The Science department covers subjects like physics, chemistry, and biology. Students engage in hands-on experiments, research projects, and field trips to foster a deeper understanding of the natural world.",
+    "image": "https://via.placeholder.com/150?text=Science+Department",
+    "teachers": [
+      {
+        "name": "Prof. Mark Lee",
+        "yearsOfExperience": 8,
+        "image": "https://randomuser.me/api/portraits/women/12.jpg"
+      },
+      {
+        "name": "Emily Davis",
+        "yearsOfExperience": 3,
+        "image": "https://randomuser.me/api/portraits/men/13.jpg"
+      },
+      {
+        "name": "David Brown",
+        "yearsOfExperience": 15,
+        "image": "https://randomuser.me/api/portraits/women/14.jpg"
+      },
+      {
+        "name": "Sarah Wilson",
+        "yearsOfExperience": 7,
+        "image": "https://randomuser.me/api/portraits/men/18.jpg"
+      }
+    ]
+  },
+
+  {
+    "title": "Arts",
+    "description": "Our Arts department offers courses in fine arts, music, drama, and design. We encourage creative expression through various forms of art and equip students with the tools they need to pursue artistic careers.",
+    "image": "https://via.placeholder.com/150?text=Arts+Department",
+    "teachers": [
+      {
+        "name": "Sarah Wilson",
+        "yearsOfExperience": 7,
+        "image": "https://randomuser.me/api/portraits/women/54.jpg"
+      },
+      {
+        "name": "Dr. Alice Johnson",
+        "image": "https://randomuser.me/api/portraits/men/25.jpg",
+        "yearsOfExperience": 12
+      },
+      {
+        "name": "Prof. Mark Lee",
+        "image": "https://randomuser.me/api/portraits/men/51.jpg",
+        "yearsOfExperience": 8
+      }
+    ]
+  },
+  {
+    "title": "Sports",
+    "description": "The Sports department provides programs in physical education, athletics, and team sports. We offer excellent sports facilities to help students maintain an active lifestyle and excel in sports at all levels.",
+    "image": "https://via.placeholder.com/150?text=Sports+Department",
+    "teachers": [
+      {
+        "name": "Jane Smith",
+        "yearsOfExperience": 5,
+        "image": "https://randomuser.me/api/portraits/women/5.jpg"
+      },
+      {
+        "name": "Dr. Alice Johnson",
+        "yearsOfExperience": 12,
+        "image": "https://randomuser.me/api/portraits/men/11.jpg"
+      },
+      {
+        "name": "Dr. Alice Johnson",
+        "image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "yearsOfExperience": 12
+      }
+    ]
+  }
+]

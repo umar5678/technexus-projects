@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Ali Khan",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "department": "Computer Science"
+  },
+  {
+    "name": "Ayesha Ahmed",
+    "image": "https://randomuser.me/api/portraits/women/1.jpg",
+    "department": "Mathematics"
+  },
+  {
+    "name": "Zainab Iqbal",
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "department": "Physics"
+  },
+  {
+    "name": "Hassan Raza",
+    "image": "https://randomuser.me/api/portraits/men/2.jpg",
+    "department": "Chemistry"
+  },
+  {
+    "name": "Sara Malik",
+    "image": "https://randomuser.me/api/portraits/women/3.jpg",
+    "department": "Biology"
+  }
+  
+]

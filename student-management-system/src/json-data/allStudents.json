@@ -1,0 +1,153 @@
+[
+  {
+    "name": "Ali Khan",
+    "image": "https://randomuser.me/api/portraits/men/42.jpg",
+    "grade": 10,
+    "department": "Science",
+    "extras": {
+      "contact": "ali.khan@example.com",
+      "hobbies": ["Cricket", "Reading"]
+    }
+  },
+  {
+    "name": "Sara Ahmed",
+    "image": "https://randomuser.me/api/portraits/men/43.jpg",
+    "grade": 12,
+    "department": "Arts",
+    "extras": {
+      "contact": "sara.ahmed@example.com",
+      "hobbies": ["Painting", "Cycling"]
+    }
+  },
+  {
+    "name": "Zain Ali",
+    "image": "https://randomuser.me/api/portraits/men/44.jpg",
+    "grade": 9,
+    "department": "IT",
+    "extras": {
+      "contact": "zain.ali@example.com",
+      "hobbies": ["Coding", "Gaming"]
+    }
+  },
+  {
+    "name": "Fatima Khan",
+    "image": "https://randomuser.me/api/portraits/men/45.jpg",
+    "grade": 11,
+    "department": "Math",
+    "extras": {
+      "contact": "fatima.khan@example.com",
+      "hobbies": ["Chess", "Cooking"]
+    }
+  },
+  {
+    "name": "Hassan Raza",
+    "image": "https://randomuser.me/api/portraits/men/46.jpg",
+    "grade": 10,
+    "department": "Science",
+    "extras": {
+      "contact": "hassan.raza@example.com",
+      "hobbies": ["Football", "Photography"]
+    }
+  },
+  {
+    "name": "Mariam Saeed",
+    "image": "https://randomuser.me/api/portraits/men/47.jpg",
+    "grade": 12,
+    "department": "Arts",
+    "extras": {
+      "contact": "mariam.saeed@example.com",
+      "hobbies": ["Writing", "Gardening"]
+    }
+  },
+  {
+    "name": "Ahmed Bashir",
+    "image": "https://randomuser.me/api/portraits/men/48.jpg",
+    "grade": 8,
+    "department": "Sports",
+    "extras": {
+      "contact": "ahmed.bashir@example.com",
+      "hobbies": ["Swimming", "Running"]
+    }
+  },
+  {
+    "name": "Ayesha Malik",
+    "image": "https://randomuser.me/api/portraits/men/49.jpg",
+    "grade": 11,
+    "department": "Public Skills",
+    "extras": {
+      "contact": "ayesha.malik@example.com",
+      "hobbies": ["Debating", "Volunteering"]
+    }
+  },
+  {
+    "name": "Bilal Shah",
+    "image": "https://randomuser.me/api/portraits/men/50.jpg",
+    "grade": 9,
+    "department": "IT",
+    "extras": {
+      "contact": "bilal.shah@example.com",
+      "hobbies": ["Robotics", "Drawing"]
+    }
+  },
+  {
+    "name": "Zara Anwar",
+    "image": "https://randomuser.me/api/portraits/men/51.jpg",
+    "grade": 10,
+    "department": "Science",
+    "extras": {
+      "contact": "zara.anwar@example.com",
+      "hobbies": ["Astronomy", "Reading"]
+    }
+  },
+  {
+    "name": "Usman Javed",
+    "image": "https://randomuser.me/api/portraits/men/52.jpg",
+    "grade": 12,
+    "department": "Math",
+    "extras": {
+      "contact": "usman.javed@example.com",
+      "hobbies": ["Puzzles", "Traveling"]
+    }
+  },
+  {
+    "name": "Noor Fatima",
+    "image": "https://randomuser.me/api/portraits/men/53.jpg",
+    "grade": 10,
+    "department": "Arts",
+    "extras": {
+      "contact": "noor.fatima@example.com",
+      "hobbies": ["Singing", "Yoga"]
+    }
+  },
+  {
+    "name": "Hamza Iqbal",
+    "image": "https://randomuser.me/api/portraits/men/54.jpg",
+    "grade": 11,
+    "department": "Sports",
+    "extras": {
+      "contact": "hamza.iqbal@example.com",
+      "hobbies": ["Basketball", "Cooking"]
+    }
+  },
+  {
+    "name": "Rabia Siddiqui",
+    "image": "https://randomuser.me/api/portraits/men/55.jpg",
+
+    "grade": 9,
+    "department": "Public Skills",
+    "extras": {
+      "contact": "rabia.siddiqui@example.com",
+      "hobbies": ["Acting", "Blogging"]
+    }
+  },
+  {
+    "name": "Tahir Ali",
+    "image": "https://randomuser.me/api/portraits/men/56.jpg",
+    "grade": 8,
+    "department": "IT",
+    "extras": {
+      "contact": "tahir.ali@example.com",
+      "hobbies": ["Animation", "Gaming"]
+    }
+  }
+]
