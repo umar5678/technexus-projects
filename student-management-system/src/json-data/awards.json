@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "title": "Top Position in National Science Olympiad",
+    "description": "Our students secured the top position in the National Science Olympiad, showcasing their knowledge and innovative thinking.",
+    "year": 2024,
+    "image": "https://img.freepik.com/free-vector/glass-trophy-acrylic-winner-award-realistic_107791-205.jpg?t=st=1731828919~exp=1731832519~hmac=73732328c1e44f7246a3581014008732c1daeb6168abcd47ed6066075de15d23&w=826"
+  },
+  {
+    "id": 2,
+
+    "title": "Best School Award",
+    "description": "Recognized as the best school in the region for academic excellence, co-curricular activities, and overall performance.",
+    "year": 2023,
+    "image": "https://img.freepik.com/free-vector/award-medal-with-red-ribbon_1284-42828.jpg?t=st=1731828927~exp=1731832527~hmac=2894cd95178c98b1b20457b0fec4847e54916aa82fe40469650d0dad4e009467&w=740"
+  },
+  {
+    "id": 3,
+
+    "title": "Gold Medal in International Robotics Competition",
+    "description": "Our robotics team won the gold medal at an international level, competing with teams from across the globe.",
+    "year": 2022,
+    "image": "https://img.freepik.com/free-vector/realistic-film-awards-illustration_23-2149330581.jpg?t=st=1731828932~exp=1731832532~hmac=5cdabf37413eb17dcdf400298c98fb60cfbd05f8a91f2f6b83ca9018b8231e7e&w=826"
+  },
+  {
+    "id": 4,
+
+    "title": "High Achievers in Board Exams",
+    "description": "Three students scored the highest marks in the board exams, making us proud of their dedication and hard work.",
+    "year": 2021,
+    "image": "https://img.freepik.com/free-vectotrophy-award-laurel-wreath-composition-with-realistic-image-golden-cup-decorated-with-garland-with-reflection_1284-32301.jpg?t=st=1731828938~exp=1731832538~hmac=c619e7a9a6ca9291fbc84ff4160fff133e6fb832b44548e22d0ab70e0ecc6cf8&w=740"
+  },
+
+  {
+    "id": 5,
+
+    "title": "Sports Champions Trophy",
+    "description": "Our sports teams brought home the championship trophy in multiple disciplines, including cricket, football, and athletics.",
+    "year": 2019,
+    "image": "https://img.freepik.com/free-vector/glass-trophy-acrylic-winner-award-realistic_107791-205.jpg?t=st=1731828919~exp=1731832519~hmac=73732328c1e44f7246a3581014008732c1daeb6168abcd47ed6066075de15d23&w=826"
+  },
+  {
+    "id": 6,
+
+    "title": "Green School Initiative Award",
+    "description": "Awarded for our commitment to environmental sustainability and the successful implementation of eco-friendly practices.",
+    "year": 2020,
+    "image": "https://img.freepik.com/free-vector/award-medal-with-red-ribbon_1284-42828.jpg?t=st=1731828927~exp=1731832527~hmac=2894cd95178c98b1b20457b0fec4847e54916aa82fe40469650d0dad4e009467&w=740"
+  },
+  {
+    "id": 7,
+
+    "title": "Excellence in Arts and Culture",
+    "description": "Students' artwork and cultural performances won accolades in national-level art and cultural festivals.",
+    "year": 2018,
+    "image": "https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg?auto=compress&cs=tinysrgb&w=640&h=420&dpr=1"
+  }
+  
+]

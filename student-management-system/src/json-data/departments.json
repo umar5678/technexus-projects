@@ -2,7 +2,7 @@
   {
     "title": "Computer Science",
     "description": "The Computer Science department offers courses in programming, algorithms, and systems development. Our facilities are equipped with modern computers and software tools to help students thrive in the tech industry.",
-    "image": "https://via.placeholder.com/150?text=CS+Department",
+    "image": "https://i.pinimg.com/1200x/ad/39/df/ad39df5e171dac5882cfc78557d86e16.jpg",
     "teachers": [
       {
         "name": "John Doe",
@@ -19,7 +19,7 @@
   {
     "title": "Mathematics",
     "description": "Our Mathematics department provides a comprehensive curriculum in pure and applied mathematics. Students are trained in problem-solving and analytical skills, preparing them for careers in research, finance, and education.",
-    "image": "https://via.placeholder.com/150?text=Math+Department",
+    "image": "https://i.pinimg.com/1200x/98/ec/17/98ec17a1c2cf790b8e7bf7b404cb98d4.jpg",
     "teachers": [
       {
         "name": "Dr. Alice Johnson",
@@ -36,7 +36,7 @@
   {
     "title": "Science",
     "description": "The Science department covers subjects like physics, chemistry, and biology. Students engage in hands-on experiments, research projects, and field trips to foster a deeper understanding of the natural world.",
-    "image": "https://via.placeholder.com/150?text=Science+Department",
+    "image": "https://i.pinimg.com/1200x/c0/84/06/c084063236fb26c38d7e0d3e8d4b8e8f.jpg",
     "teachers": [
       {
         "name": "Prof. Mark Lee",
@@ -64,7 +64,7 @@
   {
     "title": "Arts",
     "description": "Our Arts department offers courses in fine arts, music, drama, and design. We encourage creative expression through various forms of art and equip students with the tools they need to pursue artistic careers.",
-    "image": "https://via.placeholder.com/150?text=Arts+Department",
+    "image": "https://i.pinimg.com/1200x/9e/44/b3/9e44b32d53da78243324c8095515fbeb.jpg",
     "teachers": [
       {
         "name": "Sarah Wilson",
@@ -86,7 +86,7 @@
   {
     "title": "Sports",
     "description": "The Sports department provides programs in physical education, athletics, and team sports. We offer excellent sports facilities to help students maintain an active lifestyle and excel in sports at all levels.",
-    "image": "https://via.placeholder.com/150?text=Sports+Department",
+    "image": "https://i.pinimg.com/1200x/75/53/db/7553db372d7ec0ee513d1b672003f5de.jpg",
     "teachers": [
       {
         "name": "Jane Smith",

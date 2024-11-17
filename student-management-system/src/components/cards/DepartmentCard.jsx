@@ -4,18 +4,18 @@ import ViewFacilityModal from "../modals/ViewFacilityModal";
 const DepartmentCard = ({ department }) => {
     console.log(department)
   return (
-    <div className="max-w-4xl mx-auto py-6  flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 ">
+    <div className="max-w-5xl mx-auto py-6 max-h-full  flex flex-col justify-between md:gap-10  md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 ">
       {/* Image Section */}
-      <div className="w-full md:w-1/3">
+      <div className="w-full">
         <img
           src={department.image}
           alt={department.title}
-          className="w-full h-56  object-cover rounded-lg shadow-md"
+          className="max-w-full   object-cover rounded-lg shadow-md"
         />
       </div>
 
       {/* Text Section */}
-      <div className="flex flex-col w-full md:w-2/3">
+      <div className="flex max-w-full flex-col w-full md:w-2/3  space-y-4">
         <h2 className="text-2xl font-semibold text-gray-800">
           {department.title}
         </h2>

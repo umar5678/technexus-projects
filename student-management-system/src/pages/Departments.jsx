@@ -8,7 +8,7 @@ const Departments = () => {
     <Container>
       {" "}
       <div>
-        <h1 className='text-blue-700 text-3xl font-bold'>Department</h1>
+        <h1 className='text-blue-700 text-3xl font-bold py-4'>Department</h1>
       </div>
       <div className="flex flex-col gap-3">
         {departmentData.map((department, index) => (

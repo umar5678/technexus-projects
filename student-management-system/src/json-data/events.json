@@ -1,0 +1,72 @@
+[
+  {
+    "id" : 2,
+    "eventTitle": "Annual Sports Day",
+    "description": "A day full of exciting sports and activities.",
+    "date": "2024-12-15",
+    "location": "School Ground",
+    "image": "https://images.pexels.com/photos/269948/pexels-photo-269948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "details": {
+      "longDescription": "The Annual Sports Day will feature track events, team sports, and fun games for students, parents, and teachers. Trophies and medals will be awarded to the winners.",
+      "fullLocation": "ABC School, Main Sports Ground, Karachi",
+      "date": "2024-12-15",
+      "fullTitle": "ABC School's Annual Sports Day 2024"
+    }
+  },
+  {
+    "id": 3,
+    "eventTitle": "Science Exhibition",
+    "description": "Showcasing innovative student projects and experiments.",
+    "date": "2024-11-25",
+    "location": "Auditorium",
+    "image": "https://images.pexels.com/photos/26756631/pexels-photo-26756631/free-photo-of-fish-skeleton-at-exhibition.jpeg?auto=compress&cs=tinysrgb&w=640&h=426&dpr=1",
+    "details": {
+      "longDescription": "The Science Exhibition is an opportunity for students to display their innovative projects and experiments. The event will feature guest lectures and hands-on activities for attendees.",
+      "fullLocation": "ABC School Auditorium, Islamabad",
+      "date": "2024-11-25",
+      "fullTitle": "ABC School Science Exhibition 2024"
+    }
+  },
+  {
+    "id": 4,
+    "eventTitle": "Art and Music Festival",
+    "description": "Celebrating creativity with art and musical performances.",
+    "date": "2024-10-20",
+    "location": "Art Hall",
+    "image": "https://images.pexels.com/photos/8471823/pexels-photo-8471823.jpeg",
+    "details": {
+      "longDescription": "The Art and Music Festival will feature an art gallery showcasing student work, along with musical performances by the school band and choir. A fun-filled event for art and music enthusiasts.",
+      "fullLocation": "ABC School Art Hall, Lahore",
+      "date": "2024-10-20",
+      "fullTitle": "ABC School Art and Music Festival 2024"
+    }
+  },
+  {
+    "id": 5,
+    "eventTitle": "Parent-Teacher Meeting",
+    "description": "Discussing student progress and performance.",
+    "date": "2024-09-10",
+    "location": "Classrooms",
+    "image": "https://images.pexels.com/photos/5428002/pexels-photo-5428002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "details": {
+      "longDescription": "Parents are invited to discuss their child's progress and performance with teachers. An opportunity to strengthen the school-home partnership.",
+      "fullLocation": "ABC School, All Classrooms, Karachi",
+      "date": "2024-09-10",
+      "fullTitle": "ABC School Parent-Teacher Meeting 2024"
+    }
+  },
+  {
+    "id": 6,
+    "eventTitle": "Graduation Ceremony",
+    "description": "Honoring our graduates for their achievements.",
+    "date": "2024-08-30",
+    "location": "Main Auditorium",
+    "image": "https://images.pexels.com/photos/7942542/pexels-photo-7942542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "details": {
+      "longDescription": "The Graduation Ceremony is a formal event to honor our graduates for their hard work and achievements. Join us to celebrate this important milestone in their lives.",
+      "fullLocation": "ABC School Main Auditorium, Lahore",
+      "date": "2024-08-30",
+      "fullTitle": "ABC School Graduation Ceremony 2024"
+    }
+  }
+]

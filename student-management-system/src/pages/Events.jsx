@@ -1,47 +1,41 @@
-import React from 'react'
-import Container from '../components/container/Container';
+import React from "react";
+import Container from "../components/container/Container";
+import events from "../json-data/events.json";
+import ViewEventDetailsModal from "../components/modals/ViewEventDetailsModal";
 
 const Events = () => {
   return (
     <Container>
       {" "}
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-        assumenda odit quos facere optio magni accusantium nesciunt excepturi
-        tempore nisi nihil culpa laudantium, expedita labore vel sunt doloribus
-        eligendi qui. Dolorum porro facilis maiores libero nobis deserunt
-        consequuntur commodi? Ad quaerat autem iure tenetur saepe sunt ut quod.
-        Quos assumenda exercitationem tempora doloremque, similique id inventore
-        ipsa repudiandae, ipsam dolores aut dolorem, et debitis iure! Cumque
-        suscipit non error maxime, vero nostrum minus aliquid ipsa praesentium
-        corporis, repellat magnam neque a excepturi facere id iste perferendis
-        provident quia deleniti. Corrupti odit sit, ipsum recusandae quis
-        aspernatur facilis. Asperiores nulla aut a excepturi sapiente aliquam
-        ipsum odio assumenda nemo exercitationem accusamus laboriosam, veniam
-        unde dignissimos rem quod perferendis at delectus perspiciatis eligendi
-        iste quasi similique nisi? Fugiat, itaque excepturi praesentium, velit
-        quidem tenetur dicta iure vel molestias similique doloremque vero at!
-        Perspiciatis dolore atque doloremque consequatur id soluta obcaecati,
-        facere quod eius maxime sapiente quos, tempore cum veritatis eum dolor
-        esse molestiae quasi. Expedita porro quae quisquam praesentium, quasi
-        nesciunt debitis voluptatem fugiat perspiciatis minus? Amet ad est
-        repellendus dicta quaerat labore, libero harum alias tenetur facere
-        minus ex temporibus culpa magni, vel dolor veniam aliquam hic corporis
-        deleniti. Aliquam assumenda accusamus explicabo eius eaque at
-        voluptatibus exercitationem ut alias eum dolorum tenetur illum error
-        tempore recusandae, sit deleniti corrupti? Impedit eveniet, illo
-        voluptatibus tenetur nulla quaerat quod dolorum commodi ducimus quas,
-        sed consectetur dolore iure odit obcaecati totam, quam non temporibus
-        soluta excepturi ad neque. Eum mollitia quidem aliquid nemo soluta nihil
-        autem, laudantium, ullam eligendi quod officiis sequi ut odio! Officiis
-        illo sit tenetur autem, molestias officia accusantium ducimus veniam,
-        voluptas eveniet ipsa ea dolore quisquam perferendis asperiores amet
-        iste quis delectus libero ab doloribus quidem mollitia! Dignissimos
-        blanditiis molestiae, sed itaque beatae ipsam id? Nostrum modi doloribus
-        amet!
-      </p>
+      <div>
+        <h1 className="text-blue-700 text-3xl font-bold py-4">Events</h1>
+        <div className="flex flex-col py-6 max-w-3xl mx-auto ">
+          {events.map((event) => (
+            <div key={event.id}>
+              <h3 className="font-semibold text-2xl">{event.eventTitle}</h3>
+              <div className="w-full py-4">
+                <img
+                  className="rounded-xl"
+                  src={event.image}
+                  alt=""
+                />
+              </div>
+              <p>{event.description}</p>
+              <div className="flex justify-between">
+
+              <div className="flex gap-4 items-center py-2">
+                <h4 className="font-semibold text-xl">Date:</h4>{" "}
+                <span>{event.date}</span>
+                </div>
+                <ViewEventDetailsModal event={event} />
+              </div>
+              <div className="h-1 w-full bg-gray-300 my-4 mb-6"></div>
+            </div>
+          ))}
+        </div>
+      </div>
     </Container>
   );
-}
+};
 
-export default Events
+export default Events;
