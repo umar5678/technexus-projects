@@ -1,4 +1,8 @@
+import dotenv from "dotenv"
+dotenv.config()
 import mongoose, { Schema } from "mongoose";
+import bcrypt from "bcrypt"
+import jwt from "jsonwebtoken"
 
 const userSchema = new Schema(
   {
@@ -18,12 +22,18 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    refreshToken: {
+    accountNumber: {
       type: String,
+      unique: [true, 'account number mut be unique'],
+      required: true
     },
     transctions: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Transaction",
+    },
+    balance: {
+      type: Number,
+      default: 250000,
     },
   },
   { timestamps: true }
@@ -34,7 +44,7 @@ const userSchema = new Schema(
 
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
-  this.password = await bcrypt.hash(this.password, Number(salt));
+  this.password = await bcrypt.hash(this.password, 10);
   next();
 });
 
@@ -51,16 +61,11 @@ userSchema.methods.generateAccessToken = function () {
     {
       _id: this._id,
       email: this.email,
-      username: this.username,
-      role: this.role,
+      firstName: this.firstName,
     },
     process.env.ACCESS_TOKEN_SECRET,
     { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
   );
 };
-
-
-
-
 
 export const User = mongoose.model("User", userSchema);
