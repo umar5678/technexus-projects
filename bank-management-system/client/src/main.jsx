@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store, persistor } from "./store/store.js";
 import { PersistGate } from "redux-persist/integration/react";
+import Protected from "./components/Protected.jsx";
 import {
   HomePage,
   Services,
@@ -41,6 +42,26 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup />,
+      },
+      {
+        path: "/profile",
+        element: <Profile/>
+      },
+      {
+        path: "/account",
+        element: (
+          <Protected>
+            <Account />
+          </Protected>
+        ),
+      },
+      {
+        path: "/charts",
+        element: (
+          <Protected>
+            <Charts />
+          </Protected>
+        ),
       },
     ],
   },
