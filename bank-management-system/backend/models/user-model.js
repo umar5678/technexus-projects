@@ -1,8 +1,8 @@
-import dotenv from "dotenv"
-dotenv.config()
+import dotenv from "dotenv";
+dotenv.config();
 import mongoose, { Schema } from "mongoose";
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 const userSchema = new Schema(
   {
@@ -24,13 +24,27 @@ const userSchema = new Schema(
     },
     accountNumber: {
       type: String,
-      unique: [true, 'account number mut be unique'],
-      required: true
+      unique: [true, "account number mut be unique"],
+      required: true,
     },
-    transctions: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Transaction",
-    },
+    reviews: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Review",
+      },
+    ],
+    transactions: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Transaction",
+      },
+    ],
+    notificaitions: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Notification",
+      }
+    ],
     balance: {
       type: Number,
       default: 250000,

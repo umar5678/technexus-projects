@@ -21,14 +21,15 @@ const transferSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  sender: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
+  transactionType: {
+    type: String,
+    enum: ["send", "receive"]
   },
-  receiver: {
+  user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-  },
+    ref: "User"
+    
+ }
 } , {timestamps: true});
 
 export const Transaction = mongoose.model("Trancsaction", transferSchema);
