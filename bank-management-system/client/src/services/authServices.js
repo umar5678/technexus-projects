@@ -30,7 +30,7 @@ export const loginService = async (data) => {
 };
 
 
-export const logout = async () => {
+export const logoutService = async () => {
     try {
         const response = await axios.get(`${url}/auth/logout`, {
           withCredentials: true,

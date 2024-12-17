@@ -1,10 +1,33 @@
 import React, { useState } from "react";
 import ThemeToggleButton from "../ThemeToggleButton";
-import {Link, NavLink} from "react-router-dom"
+import { Link, NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { removeUser } from "../../store/userSlice";
+import { logoutService } from "../../services/authServices";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const { currentUser } = useSelector((state) => state.user);
   const [isOpen, setIsOpen] = useState(false);
   const toggllMenu = () => setIsOpen(!isOpen);
+  const [loading, setLoading] = useState(false);
+
+  const handleLogout = () => {
+    setLoading(true);
+    logoutService()
+      .then((response) => {
+        dispatch(removeUser({}));
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const isUserLoggedIn = (user) => {
+    return Object.keys(user || {}).length > 0;
+  };
+
   return (
     <div>
       <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
@@ -19,12 +42,23 @@ const Header = () => {
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <div className="pr-4 ">{/* <ThemeToggleButton /> */}</div>
-            <Link to="/login"
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Login
-            </Link>
+            {isUserLoggedIn(currentUser) ? (
+              <button
+                onClick={handleLogout}
+                className="text-red-500 bg-red-600 bg-opacity-20 rounded-lg text-sm px-4 py-2 text-center"
+              >
+                Logout
+              </button>
+            ) : (
+              <Link
+                to="/login"
+                type="button"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Login
+              </Link>
+            )}
+
             <button
               onClick={toggllMenu}
               data-collapse-toggle="navbar-sticky"

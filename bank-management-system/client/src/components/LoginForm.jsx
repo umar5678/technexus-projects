@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loginService } from "../services/authServices";
+import { useDispatch } from "react-redux";
+import { setUser } from "../store/userSlice";
+
 
 const LoginForm = () => {
     const navigate = useNavigate()
+    const dispatch = useDispatch()
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({});
@@ -15,9 +19,11 @@ const LoginForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setLoading(true)
+        dispatch(setUser({}))
         setError("")
         loginService(formData).then((response) => {
             console.log(response)
+            dispatch(setUser(response.data?.data))
         }).catch((err) => {
             console.log(err)
             setError(err.response?.data?.message || err?.message)
