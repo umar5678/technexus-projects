@@ -9,6 +9,8 @@ import {
   Profile,
   Charts,
   Account,
+  Login,
+  Signup,
 } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
         path: "/contact-us",
         element: <ContactUs />,
       },
+      {
+        path: "/login",
+        element: <Login/>
+      },
+      {
+        path: "/signup",
+        element: <Signup/>
+      }
     ],
   },
 ]);

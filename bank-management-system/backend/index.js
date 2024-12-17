@@ -6,6 +6,7 @@ import connectDB from "./db/index.js";
 import cookieParser from "cookie-parser";
 
 const PORT = process.env.PORT || 3001;
+const clientOrigin = process.env.CLIENT_ORIGIN;
 
 const app = express();
 
@@ -14,7 +15,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(cookieParser());
-app.use(cors());
+app.use(
+  cors({
+    origin: clientOrigin,
+    credentials: true,
+  })
+);
 
 import errorHandlerMiddleware from "./middlewares/errorHandlerMiddleware.js";
 import { notFound } from "./middlewares/notFound.js";

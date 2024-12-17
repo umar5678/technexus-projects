@@ -8,7 +8,7 @@ import { Notification } from "../models/notification-model.js";
 
 const getAllTransactions = asyncHandler(async (req, res, next) => {
   // get user from req.user
-  // find all the transactions whois user id match user._id
+  // find all the transactions whois user match user._id
   // send respons
     const allTransactions = await Transaction.find({ user: req.user._id })
     

@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex-1 bg-white dark:bg-gray-900">
+      <div className="flex-1 bg-white dark:bg-slate-900">
         <Outlet />
       </div>
       <Footer />
