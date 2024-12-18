@@ -16,6 +16,10 @@ import {
   Account,
   Login,
   Signup,
+  Dashboard, 
+  SendMoney,
+  AddReview,
+  Transactions
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -54,6 +58,24 @@ const router = createBrowserRouter([
             <Account />
           </Protected>
         ),
+        children: [
+          {
+            path: "/account",
+            element: <Dashboard />,
+          },
+          {
+            path: "/account/transactions",
+            element: <Transactions />,
+          },
+          {
+            path: "/account/send-money",
+            element: <SendMoney />,
+          },
+          {
+            path: "/account/add-review",
+            element: <AddReview />,
+          }
+        ]
       },
       {
         path: "/charts",

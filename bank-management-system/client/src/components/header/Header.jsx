@@ -3,7 +3,7 @@ import ThemeToggleButton from "../ThemeToggleButton";
 import { Link, NavLink } from "react-router-dom";
 import LoginLogoutBtn from "../LoginLogoutBtn";
 import Logo from "../Logo";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +15,11 @@ const Header = () => {
    };
 
   const NavLinkClass = ({ isActive }) =>
-    `block py-2 pr-4 pl-3 duration-200 ${
-      isActive ? "text-blue-500" : "dark:text-white dark:hover:text-blue-500"
-    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0  lg:p-0`;
+    `block  md:py-0 duration-200 ${
+      isActive
+        ? "text-blue-500 bg-blue-500 text-white md:text-blue-500 md:bg-transparent "
+        : "dark:text-white dark:hover:text-blue-500"
+    } rounded-lg pl-4 mt-0 py-2   lg:p-0`;
     
 
   return (
@@ -112,7 +114,7 @@ const Header = () => {
                   </li>
                 </>
               )}
-              <li className="pl-2">
+              <li className="pl-2 pt-2 md:pt-0">
                 <a href="">
                   <ThemeToggleButton />
                 </a>

@@ -6,6 +6,10 @@ import Charts from "./Charts";
 import Account from "./Account";
 import Login from "./Login";
 import Signup from "./Signup";
+import Transactions from "./Transactions";
+import Dashboard from "./Dashboard";
+import SendMoney from "./SendMoney";
+import AddReview from "./AddReview";
 
 export {
   HomePage,
@@ -16,4 +20,8 @@ export {
   Account,
   Login,
   Signup,
+  Transactions,
+  Dashboard,
+  SendMoney,
+  AddReview,
 };

@@ -1,17 +1,15 @@
-import React from 'react'
-import { Container } from '../components'
+import React from "react";
+import { Container, SideBar, Spinner } from "../components";
+import { Outlet } from "react-router-dom";
 
 const Account = () => {
   return (
     <div className="w-full mx-auto">
       <Container>
-        <h1 className="text-center text-3xl">Account</h1>
-        <h1 className="text-4xl  md:text-6xl text-center pt-20 ">
-          Comming soon
-        </h1>
+        <SideBar />
       </Container>
     </div>
   );
-}
+};
 
-export default Account
+export default Account;
