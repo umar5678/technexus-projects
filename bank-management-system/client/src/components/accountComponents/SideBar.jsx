@@ -41,9 +41,9 @@ const SideBar = () => {
         >
           <div
             onClick={toggleSidebar}
-            className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800"
+            className="h-full px-3 py-4 overflow-y-auto bg-gray-100 dark:bg-gray-800"
           >
-            <ul className="space-y-2 font-medium">
+            <ul className="space-y-2 font-medium flex flex-col gap-2 items-center">
               <li>
                 <NavLink to="/account/" className="">
                   Dashboard

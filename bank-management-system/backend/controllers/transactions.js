@@ -10,16 +10,16 @@ const getAllTransactions = asyncHandler(async (req, res, next) => {
   // get user from req.user
   // find all the transactions whois user match user._id
   // send respons
-    const allTransactions = await Transaction.find({ user: req.user._id })
-    
-    if (!allTransactions) throw new ApiErrorr(404, "tansaction find error")
-    
-    return res.status(200).json(new ApiResponse(200, allTransactions))
+  const allTransactions = await Transaction.find({ user: req.user._id });
+
+  if (!allTransactions) throw new ApiErrorr(404, "tansaction find error");
+
+  return res.status(200).json(new ApiResponse(200, allTransactions));
 });
 
-
 const sendMoney = asyncHandler(async (req, res, next) => {
-    const { receiverAccountNumber, amount } = req.body;
+  const { receiverAccountNumber, amount } = req.body;
+  const amountInNumber = Number(amount);
   const user = req.user; // Assuming req.user contains authenticated user info
 
   // Validate input
@@ -28,20 +28,22 @@ const sendMoney = asyncHandler(async (req, res, next) => {
   }
 
   // Find the recipient
-  const receiver = await User.findOne({ accountNumber: receiverAccountNumber }).select("-password");
+  const receiver = await User.findOne({
+    accountNumber: receiverAccountNumber,
+  }).select("-password");
   if (!receiver) {
     throw new ApiError(404, "Recipient not found");
   }
-    const sender = await User.findById(user._id).select("-password")
-if(!sender) throw new ApiError(404, "sender not found")
+  const sender = await User.findById(user._id).select("-password");
+  if (!sender) throw new ApiError(404, "sender not found");
   // Check sender's balance
-  if (sender.balance < amount) {
+  if (sender.balance < amountInNumber) {
     throw new ApiError(400, "Insufficient balance");
   }
 
   // Update balances
-  sender.balance -= amount;
-  receiver.balance += amount;
+  sender.balance -= amountInNumber;
+  receiver.balance += amountInNumber;
   await Promise.all([sender.save(), receiver.save()]);
 
   // Create transactions
@@ -50,7 +52,7 @@ if(!sender) throw new ApiError(404, "sender not found")
     to: receiver.firstName,
     senderAccountNumber: sender.accountNumber,
     receiverAccountNumber: receiver.accountNumber,
-    amount,
+   amount,
     transactionType: "send",
     user: sender._id,
   });
@@ -70,22 +72,23 @@ if(!sender) throw new ApiError(404, "sender not found")
   // Create notifications
   const senderNotification = new Notification({
     user: sender._id,
-    notificationMsg: `${amount} sent to ${receiver.name} acc: ${receiver.accountNumber}, Please refresh the page to see the updated balance`,
+    notificationMsg: `${amountInNumber} sent to ${receiver.name} acc: ${receiver.accountNumber}, Please refresh the page to see the updated balance`,
   });
 
   const receiverNotification = new Notification({
     user: receiver._id,
-    notificationMsg: `${amount} received from ${sender.name} acc: ${sender.accountNumber}`,
+    notificationMsg: `${amountInNumber} received from ${sender.name} acc: ${sender.accountNumber}`,
   });
 
   await Promise.all([senderNotification.save(), receiverNotification.save()]);
+  const userData = await User.findById(user._id).select("-password");
 
-    res.status(200).json(new ApiResponse(200, {}, "Transaction successful"));
-})
+  res.status(200).json(new ApiResponse(200, userData, "Transaction successful"));
+});
 
 export { getAllTransactions, sendMoney };
 
-    //  get user from req.user
+//  get user from req.user
 //   // get account numer of reciever , amount from req.body
 //   // check if reciever exist
 //   // check if user has enough balance
@@ -94,7 +97,7 @@ export { getAllTransactions, sendMoney };
 //   // create transaction for sender and reciever
 //   // create notification for both
 //   // send response
-    
+
 // transaction schema for sender
 
 // from: Sender Name
@@ -124,7 +127,6 @@ export { getAllTransactions, sendMoney };
 
 // user: receiver id
 // notificationMsg: {amount} received from {receiverNAme} acc: {senderAcc}
-
 
 // const sendMoney = asyncHandler(async (req, res, next) => {
 //   //  get user from req.user

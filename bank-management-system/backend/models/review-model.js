@@ -8,11 +8,13 @@ const reviewSchema = new Schema(
     },
     review: {
       type: String,
+      required: true,
     },
-    rating: {
-      type: Number,
-      min: 1,
-      max: 5,
+    company: {
+      type: String,
+    },
+    name: {
+      type: String,
     },
   },
   { timestamps: true }

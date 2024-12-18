@@ -13,6 +13,8 @@ import FeaturedServices from "./homeComponents/FeaturedServices";
 import Testimonials from "./homeComponents/Testimonials";
 import ServiceModal from "./modals/ServiceModal";
 import SideBar from "./accountComponents/SideBar";
+import TransactionCard from "./cards/TransactionCard";
+
 export {
   Testimonials,
   Spinner,
@@ -27,6 +29,7 @@ export {
   OurPartners,
   Stats,
   FeaturedServices,
-    ServiceModal,
+  ServiceModal,
   SideBar,
+  TransactionCard,
 };

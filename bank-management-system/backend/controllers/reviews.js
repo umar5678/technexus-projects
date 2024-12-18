@@ -11,22 +11,20 @@ const addReview = asyncHandler(async (req, res, next) => {
   // check if review is created or not
   // add review id to user reviews array
   // send review data in response
-  const { review, rating } = req.body;
+  const { review, company, name } = req.body;
 
   if (review === "") throw new ApiError(400, "Review message is required");
-  if (rating > 5 || rating < 1)
-    throw new ApiError(400, "Rating must be between 1 and 5");
 
   const user = await User.findById(req.user._id).select("-password");
 
-  console.log(user);
 
   if (!user) throw new ApiError(400, "user not found");
 
   const newReview = await Review.create({
     user: req.user._id,
     review,
-    rating,
+    company,
+    name,
   });
 
   if (!newReview) throw new ApiError(400, "Review not created");
@@ -38,11 +36,11 @@ const addReview = asyncHandler(async (req, res, next) => {
 });
 
 const getAllReviews = asyncHandler(async (req, res, next) => {
-  const allReviews = await Review.find({});
+  const allReviews = await Review.find({}).sort({ createdAt: -1 }).limit(4);
 
   if (!allReviews) throw new ApiError(404, "reviews not found");
 
-    return res.status(200).json(new ApiResponse(200, allReviews));
+  return res.status(200).json(new ApiResponse(200, allReviews));
 });
 
 export { addReview, getAllReviews };

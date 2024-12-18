@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Footer } from "./components";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Header />
       <div className="flex-1 bg-white dark:bg-slate-900">
         <Outlet />
+        <ScrollRestoration/>
       </div>
       <Footer />
     </div>

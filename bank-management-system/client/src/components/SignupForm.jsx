@@ -3,8 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { signupService } from "../services/authServices";
 
 const SignupForm = () => {
-
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -16,27 +15,23 @@ const SignupForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-      setError("")
-      setLoading(true)
-      signupService(formData).then((response) => {
-          setLoading(false)
-          navigate("/login")
-          
-      }).catch((err) => {
-          setError(err.response?.data?.message )
-        //   console.log(err)
-          setLoading(false)
-
+    setError("");
+    setLoading(true);
+    signupService(formData)
+      .then((response) => {
+        setLoading(false);
+        navigate("/login");
       })
+      .catch((err) => {
+        setError(err.response?.data?.message);
+        //   console.log(err)
+        setLoading(false);
+      });
   };
 
   return (
     <div>
-          {error && (<p className="text-red-500 text-center">
-              {error}
-          </p>
-              
-     )}
+      {error && <p className="text-red-500 text-center">{error}</p>}
       <form onSubmit={handleSubmit} class="max-w-sm mx-auto">
         <div class="mb-5">
           <label
@@ -109,9 +104,8 @@ const SignupForm = () => {
           on
           type="submit"
           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                  {loading ? 'Loading' : 'Signup'}
-          
+        >
+          {loading ? "Loading" : "Signup"}
         </button>
       </form>
     </div>

@@ -22,11 +22,11 @@ const LoginForm = () => {
         dispatch(setUser({}))
         setError("")
         loginService(formData).then((response) => {
-            console.log(response)
+            // console.log(response)
             dispatch(setUser(response.data?.data))
             navigate("/account")
         }).catch((err) => {
-            console.log(err)
+            // console.log(err)
             setError(err.response?.data?.message || err?.message)
             setLoading(false)
         })

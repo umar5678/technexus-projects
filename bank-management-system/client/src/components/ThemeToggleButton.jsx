@@ -1,30 +1,29 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
 const ThemeToggleButton = () => {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
 
-  const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light")
-
-  console.log(theme)
   useEffect(() => {
-    localStorage.setItem('theme', theme)
-    const myTheme = localStorage.getItem("theme")
-    document.querySelector("html").classList.remove("light", "dark")
-    document.querySelector("html").classList.add(myTheme)
-  }, [theme])
+    localStorage.setItem("theme", theme);
+    const myTheme = localStorage.getItem("theme");
+    document.querySelector("html").classList.remove("light", "dark");
+    document.querySelector("html").classList.add(myTheme);
+  }, [theme]);
 
   const toggleTheme = (e) => {
-    e.target.checked ? setTheme("dark") : setTheme("light")
-   }
+    e.target.checked ? setTheme("dark") : setTheme("light");
+  };
 
   return (
     <div className="flex-none">
       <label className="swap swap-rotate">
-        <input 
-          className='hidden'
+        <input
+          className="hidden"
           type="checkbox"
           checked={theme === "dark"}
           onChange={toggleTheme}
-          
         />
         {theme === "light" ? (
           <svg
@@ -48,6 +47,6 @@ const ThemeToggleButton = () => {
       </label>
     </div>
   );
-}
+};
 
-export default ThemeToggleButton
+export default ThemeToggleButton;
