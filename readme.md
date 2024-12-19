@@ -29,7 +29,7 @@ Here's a rewritten version of the README for better clarity and readability:
      ```
    - **Start development server:**
      ```bash
-     npm dev
+     npm run dev
      ```
 
 4. **Set up Backend:**
@@ -47,7 +47,7 @@ Here's a rewritten version of the README for better clarity and readability:
      ```
    - **Start development server:**
      ```bash
-     npm dev
+     npm run dev
      ```
 
 5. **Access the Application:**
