@@ -93,7 +93,15 @@ const logout = asyncHandler(async (req, res, next) => {
 });
 
 const verify = asyncHandler(async (req, res, next) => {
-  return res.status(200).json(new ApiResponse(200, req.user, "varify success"));
+  // get user from req.user
+  // find user in db
+  // return user
+
+  const user = await User.findById(req.user._id).select("-password");
+  if (!user) {
+    throw new ApiError(400, "user, not found");
+  }
+  return res.status(200).json(new ApiResponse(200, user, "varify success"));
 });
 
 export { register, login, logout, verify };

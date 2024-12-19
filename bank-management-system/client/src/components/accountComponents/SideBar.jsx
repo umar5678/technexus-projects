@@ -69,10 +69,10 @@ const SideBar = () => {
           </div>
         </aside>
         <div
-          onClick={toggleSidebar}
+          onClick={() => setIsOpen(false)}
           className={`p-4 min-h-screen flex-grow sm:ml-56 `} // Apply ml-64 for large screens
         >
-          <Outlet onClick={toggleSidebar} />
+          <Outlet onClick={() => setIsOpen(false)} />
         </div>
       </div>
     </div>

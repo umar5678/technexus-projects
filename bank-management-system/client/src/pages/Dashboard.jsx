@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import Refresh from "../components/Refresh";
+
 
 const Dashboard = () => {
   // refresh btn
@@ -9,6 +11,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col items-center  min-h-screen py-2 mt-10">
+      <Refresh/>
       <h1 className="text-4xl ">
         Welcome, {`${currentUser?.firstName} ${currentUser?.lastName}`}
       </h1>

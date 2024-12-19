@@ -69,7 +69,7 @@ const Transactions = () => {
 
       <button
         onClick={handleclick}
-        className="bg-blue-500   text-white dark:bg-opacity-45 px-4 py-2 rounded-md mb-10"
+        className="bg-blue-500  mt-10 text-white dark:bg-opacity-45 px-4 py-2 rounded-md mb-10"
       >
         Get All Transactions
       </button>
