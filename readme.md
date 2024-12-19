@@ -53,12 +53,3 @@
 5. **Access the Application:**
 
    - Open the URL provided by the Vite development server in your web browser. This will be the URL for the client application.
-
-**Key Improvements:**
-
-- **Clearer Structure:** Uses numbered steps for better guidance.
-- **Concise Language:** Uses shorter, more direct phrasing.
-- **Consistent Formatting:** Maintains consistent spacing and indentation.
-- **Enhanced Readability:** Improves overall readability by using a more professional tone.
-
-This revised README provides a more user-friendly and efficient guide for running the Bank Management System locally.
